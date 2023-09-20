@@ -12,7 +12,7 @@ public class SolutionOptimized
         }
 
         Span<int> nums = stackalloc int[n + 1];
-        nums[1] = 1;
+        (nums[0], nums[1]) = (0, 1);
         int _max = 1;
 
         for (int index = 2; index < n + 1; index++)
